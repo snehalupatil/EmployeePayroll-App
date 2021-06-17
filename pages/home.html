@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
+    0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
+    &display=swap" rel="stylesheet">
+    <title>Employee Payroll App</title>
+    
+</head>
+  <body>
+    <!-- UC-1 -->
+    <header class="header-content header">
+      <div class="logo-content">
+          <img src="../assets/images/logo.png" alt="">
+          <div>
+              <span class="emp-text">EMPLOYEE</span><br>
+              <span class="emp-text emp-payroll">PAYROLL</span>
+          </div>
+      </div> 
+    </header> 
+    <div class="main-content">
+      <!-- UC-2 -->
+      <div class="header-content">
+        <div class="emp-detail-text">
+          Employee Details <div class="emp-count">10</div>
+        </div>
+          <a href="../pages/payroll_form.html" class="add-button">
+            <img src="../assets/icons/add-24px.svg" alt="">Add User</a>
+        </div>
+        <div class="table-main">
+          <table id="table-display" class="table">  <!-- display changes to table-display as mention in a new_home.js file quereySelector -->
+            <!-- UC-3 -->
+            <!-- <tr>                   {Shifted to new_home.js file // And it get read by Script at line}
+              <th></th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Start Date</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td><img class="profile" alt=""
+                    src="../assest/profile-images/Ellipse -1.png">
+              </td>
+              <td>Snehal Uttamrao Patil</td>
+              <td>Female</td>
+              <td><div class='dept-label'>HR</div> <div class='dept-label'>Finance</div></td>
+              <td>4000000</td>
+              <td>1 Nov 2020</td>
+              <td>
+                <img id="1" onclick="remove(this)" alt="delete"
+                      src="../assest/icons/delete-black-18dp.svg">
+                <img id="1" alt="edit" onclick="update(this)"
+                      src="../assest/icons/create-black-18dp.svg">
+              </td>    
+            </tr> -->
+          </table>
+        </div>
+    </div>  <!-- (main-content area) -->
+    <script defer src="../js/new_home.js"></script>
+    <script defer src="../js/utility.js"></script>
+    <script defer src="../js/site_properties.js"></script>
+    <script defer src="../js/EmployeePayroll.js"></script>
+  </body>
+</html>
